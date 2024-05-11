@@ -411,8 +411,6 @@
     </section> <!-- end s-portfolio -->
 
 
-
-
     <!-- contact
     ================================================== -->
     <section id="contact" class="s-contact target-section">
@@ -440,39 +438,35 @@
 
             <div class="column large-4 medium-12">
 
-                <div class="row contact-infos">
-                    <div class="column large-12 medium-6 tab-12">
-                        <div class="contact-block">
-                            <h5 class="contact-block__header">
-                                Email
-                            </h5>
-                            <p class="contact-block__content">
-                                <a  href="mailto:aslihakbulut@hotmail.com">aslihakbulut@hotmail.com</a>
-                            </p>
-                        </div> <!-- end contact-block -->
-                    </div>
-                    <div class="column large-12 medium-6 tab-12">
-                        <div class="contact-block">
-                            <h5 class="contact-block__header">
-                                Phone
-                            </h5>
-                            <p class="contact-block__content">
-                                <a href="tel:+905395823072">+90 539 582 3072</a>
-                            </p>
-                            
-                        </div> <!-- end contact-block -->
-                    </div>
-                    <div class="column large-12 medium-6 tab-12">
-                        <div class="contact-block">
-                            <p class="contact-block__content">
-                                <a href="https://github.com/AslihanAkbulutt">My Github Account</a>
-                            </p>
-                            
-                        </div> <!-- end contact-block -->
-                    </div>
-
-                </div> <!-- end contact-infos -->
-
+                <form action="connect.php" method="POST">
+                    <div class="row contact-infos">
+                        <div class="column large-12 medium-6 tab-12">
+                            <div class="contact-block">
+                                <h5 class="contact-block__header">
+                                    Email
+                                </h5>
+                                <input type="email" name="email" id="email" style="color: white;">
+                            </div> <!-- end contact-block -->
+                        </div>
+                        <div class="column large-12 medium-6 tab-12">
+                            <div class="contact-block">
+                                <h5 class="contact-block__header">
+                                    Message
+                                </h5>
+                                <input type="text" name="msg" id="msg" style="color: white;">
+                                
+                            </div> <!-- end contact-block -->
+                        </div>
+                        <div class="column large-12 medium-6 tab-12">
+                            <div class="contact-block">
+                                <input type="submit" name="submit" value="Post Message">
+                                
+                            </div> <!-- end contact-block -->
+                        </div>
+    
+                    </div> <!-- end contact-infos -->
+    
+                </form>
             </div>
         </div> <!-- s-contact__content -->
 
